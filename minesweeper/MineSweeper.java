@@ -30,13 +30,16 @@ import java.util.Scanner;
             row=input.nextInt();
             System.out.println("Column::");
             column=input.nextInt();
-            
-            if(row<0||row>=rowNumber){
-            System.out.println("Useless expressions!!");
+            if(row==rowNumber&&column==columnNumber){
+                System.out.println("Use smaller row and column values!!!");
             continue;}
-            if(column<0||column>=columnNumber){
-            System.out.println("Useless expressions!!");
+            if(row==rowNumber){
+            System.out.println("Use smaller row value!!");
             continue;}
+            if(column==columnNumber){
+            System.out.println("Use smaller column value!!");
+            continue;}
+    
     
     
             if(map[row][column]!=-1){
@@ -79,7 +82,7 @@ import java.util.Scanner;
                 if((r<(rowNumber-1)&&(c<(columnNumber-1)&& (map[r+1][c+1]==-1)))){field[r][c]++;}
                 if((r<(rowNumber-1)&&(c>0)&&(map[r+1][c-1]==-1))){field[r][c]++;}
                 if((r>0)&&(c>0)&&map[r-1][c-1]==-1){field[r][c]++;}
-if(field[r][c]==0){field[r][c]=-2;}
+               
         }
 }
           
