@@ -1,4 +1,3 @@
-
 package minesweeper;
 
 public class Question {
@@ -8,4 +7,3 @@ return question;}
   public void setQuestion(String newQuestion){
     this.question=newQuestion;}
 }
-
